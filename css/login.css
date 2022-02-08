@@ -1,0 +1,204 @@
+body,div,h1,h2,h3,h4,h5,p,ul,li {margin:0;padding:0;font-weight:normal;list-style:none;}
+html {-webkit-text-size-adjust:100%;}
+html,body {-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;background:#fff;}
+body {font-family:'PingFang SC','Hiragino Sans GB','Microsoft Yahei','WenQuanYi Micro Hei',sans-serif;font-size:14px;position:relative;overflow-x:hidden;}
+body:before {background:grey;position:absolute;content:'';display:block;width:14px;height:14px;left:50%;top:50%;margin-left:-7px;margin-top:-7px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-webkit-animation:loading 2s ease-out forwards infinite;-moz-animation:loading 2s ease-out forwards infinite;display:none;}
+body.loading:before {display:block;}
+@-webkit-keyframes loading {
+  0% {-webkit-transform:scale(0.3);}
+  50% {-webkit-transform:scale(1.0);}
+  100% {-webkit-transform:scale(0.3);}
+}
+@-moz-keyframes loading {
+  0% {-moz-transform:scale(0.3);}
+  50% {-moz-transform:scale(1.0);}
+  100% {-moz-transform:scale(0.3);}
+}
+
+body.loading #container,body.loading #single,body.loading .nav {opacity:0;}
+html.loading,body.loading {height:100%;overflow:hidden;}
+a,a:hover {text-decoration:none;}
+img {display:block;max-width:100%;height:auto;}
+audio {display:none;visibility:hidden;opacity:0;width:0;height:0;}
+#screen {position:relative;overflow:hidden;}
+#mark {width:100%;height:560px;overflow:hidden;}
+.layer {position:relative;}
+#cover {position:absolute;max-width:none;}
+body.mu .image-logo {background-color:black;}
+#vibrant {position:absolute;top:0;left:0;width:100%;height:100%;}
+#vibrant div {position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;background-color:#000;}
+#post0 {width:28%;position:absolute;top:27%;left:10%;}
+#post0 p:first-child {color:#fff;font-size:12px;}
+#post0 h2 {font-size:28px;margin-top:15px;}
+#post0 h2 a {color:#fff;}
+#post0 h2 + p {color:#fff;font-size:14px;margin-top:30px;}
+.login_section{font-family: "Times New Roman", times, serif; color:white;padding:5% auto;}
+.text-margin{margin:4% auto;}
+input:focus {outline:none;}
+.post {margin:100px auto 0;width:1200px;position:relative;}
+.post > a {display:inline-block;width:680px;height:440px;overflow:hidden;position:relative;z-index:3;}
+.post:nth-child(odd) {text-align:left;}
+.post:nth-child(even) {text-align:right;}
+.post:nth-child(odd) .else {left:660px;}
+.post:nth-child(even) .else {right:660px;}
+.Login_section{ padding-left:5%; width:43%; min-width:515px; }
+.Logins{ width:334px; padding-top:10px;}
+.Login_row{background:rgba(255,255,255,0.15); border:1px solid #FFF; border-radius:3px; margin-top:30px; height:52px; width:332px;}
+.Login_input{ padding-left:62px; padding-right:20px; width:250px; color:#FFF; font-size:14px; background:none; border:none;height:52px; line-height:52px;}
+.icon1{ background:url(../imges/icon_01.png) no-repeat 20px center;}
+.icon2{ background:url(../imges/icon_02.png) no-repeat 20px center;}
+input.Login_input::-webkit-input-placeholder {color: #FFF;}
+input.Login_submit{ cursor:pointer;background:#00aeff;width:334px;border-radius:3px;margin-bottom:30px;height:52px;line-height:52px; font-size:14px; color:#FFF; text-align:center; display:block; margin-top:25px;}
+input.Login_submit:hover{ text-shadow:0 0 5px #FFF;}
+.Login_wj{ width:275px; font-size:14px; line-height:20px; color:#b4b4b4; text-align:center; margin: auto auto 200px auto;}
+.Login_wj a{ color:#b4b4b4;}
+.Login_wj a:hover{ color:#FFF;}
+.Guests {width:275px;margin:auto; bottom:100px;  text-align:left;}
+.Guests a{color:#b1caf2;}
+.Guests a:hover{color:#FFF;}
+
+#preview {position:fixed;top:0;width:100%;height:100%;z-index:5;background:#fff;left:100%;-moz-transition:all 0.3s cubic-bezier(0,0,0.2,1);-webkit-transition:all 0.3s cubic-bezier(0,0,0.2,1);transition:all 0.3s cubic-bezier(0,0,0.2,1);overflow-y:scroll;}
+#preview.show {left:0;}
+#preview + canvas {display:none;}
+
+
+#_start {height: 0px;width: 0px;background: #D6E9C6;color: white;text-align: center;line-height: 40px;}
+
+#_close {float: right;height: 0px;width: 0px;background: none;color: white;border-left: 1px solid white;border-bottom: 1px solid white;text-align: center;line-height: 40px;cursor: pointer;}
+#forgot_container,#regist_container {width: 100%;text-align: center;display: none;margin-top: 30px auto auto auto;}
+#lab1 {width: 330px;border-bottom: 1px solid #000000;text-align: left;font-family: '微软雅黑';}
+#lab_login {font-size: 30px;height: 40px;color: #000000;}
+#lab_toRegist,#lab_toLogin {font-size: 15px;line-height: 55px;float: right;color: #000000;}
+#lab_type1,
+#lab_type2 {font-size: 16px;float: left;color: #8C8C8C;}
+#login_number,
+#login_password {height: 50px;border-radius: 0;margin-top: 10px;}
+
+#regist_account,
+#regist_password1,
+#regist_password2,
+#regist_phone,
+#regist_vcode{height: 42px;border-radius: 0;margin-top: 5px;}
+#regist_vcode{width:200px;display: inline-block;float: left;}
+#getVCode{width:125px;height: 40px;border-radius: 0;margin-top: 6px;float: left;}
+#login_btn {float: left;width: 100px;height: 40px;border-radius: 0;margin-top: 20px;}
+#regist_btn{width: 330px;height: 40px;border-radius: 0;margin-top: 20px;}
+#form_inputs {width: 70%; margin:auto; border-bottom: 1px solid #FFFFFF;}
+
+
+#regForm {margin: auto;font-family: Raleway;padding: 40px;width: 55%;min-width: 300px;color:white;}
+
+h1 {
+  text-align: center;  
+}
+
+input {
+ 
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.interests{
+	width: 30%;
+    height:130px;
+	overflow: hidden;
+	margin-top: 2.5%; 
+	margin-left: 2.5%; 
+	float:left;
+}
+
+.interests img:hover {
+	filter:grayscale(0%);
+	filter:gray;
+	-webkit-filter:grayscale(0%);
+	filter:none;
+	transition: 1s ease;
+	
+}
+.interests img{
+	margin: auto;
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+	-webkit-transition: all 1s ease;
+	
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width:1200px) {
+  #post0 {width:32%;}
+  #post0 h2 {font-size:24px;}
+}
+@media screen and (max-width:900px) {
+  #mark {height:480px;}
+  #vibrant polygon {transform:translateX(-10%);-moz-transform:translateX(-10%);-webkit-transform:translateX(-10%);}
+  #post0 {width:40%;}
+  #post0 h2 {font-size:20px;}
+ 
+}
+@media screen and (max-width:780px) {
+  #vibrant svg {display:none;}
+  #vibrant div {opacity:0.3;}
+  #post0 {bottom:60px;top:auto;width:70%;left:5%;}
+}
+@media screen and (max-width:480px) {
+  #post0 p:first-child {display:block;}
+  #post0 h2 {text-align:left;margin:0 10px 0 0;}
+  #post0 h2 + p {text-align:left;margin:10px 20px 0 0;color:#f2f2f2;font-size:14px;}
+  #post0 h2 a {color:#fff;}
+  #post0 .summary {display:none;}
+ 
+}
+
+
+
